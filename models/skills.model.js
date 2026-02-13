@@ -15,7 +15,14 @@ const SkillsSchema = new mongoose.Schema(
             required: true
         },
         scale: {
-            type: String
+            type: Number,
+            min: 1,
+            max: 5
+        },
+        skillLevel:{
+            type: String,
+            enum: ["Beginner", "Intermediate", "Advanced", "Expert"],
+            default: "Beginner"
         }
     },
     {timestamps: true}

@@ -15,9 +15,10 @@ const ProjectsSchema = new mongoose.Schema(
             type: [String],
             required: true
         },
-        skillUse:{
-            type: model.Schema.skills
-        },
+        skillUse:[{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Skills"
+        }],
         completedDate:{
             type: Date
         },
