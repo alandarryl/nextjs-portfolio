@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 
 const experienceSchema = new mongoose.Schema(
     {
-        entrprise:{
+        enterprise:{
             type: String,
             required: true
         },
