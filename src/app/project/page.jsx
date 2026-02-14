@@ -2,7 +2,10 @@ import React from 'react'
 
 function page() {
   return (
-    <div>page</div>
+    <div>
+      <h2>Mes prjets</h2>
+      <div className='project-grid' ></div>
+    </div>
   )
 }
 
