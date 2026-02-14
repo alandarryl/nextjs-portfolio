@@ -1,8 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { messageFields } from '@/utils/formFields';
+import { messageApi } from '@/utils/apiUrl';
+
+import DynamicForm from '@/components/dynamicForm';
 
 function page() {
     return (
-        <div>Formulaire de contact</div>
+        <div>
+            <h2>Formulaire de contact</h2>
+            <DynamicForm fields={messageFields} endpoint={messageApi} />
+        </div>
     )
 }
 

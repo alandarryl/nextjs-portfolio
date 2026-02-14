@@ -69,6 +69,7 @@ function DynamicForm({ fields, endpoint }) {
                 name={field.name}
                 required={field.required}
                 onChange={handleChange}
+                placeholder={field.placeholder}
                 />
             ) : field.type === "select" ? (
                 <select
@@ -86,6 +87,7 @@ function DynamicForm({ fields, endpoint }) {
                 <input
                 type={field.type}
                 name={field.name}
+                placeholder={field.placeholder}
                 required={field.required}
                 onChange={handleChange}
                 />
