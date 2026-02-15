@@ -82,11 +82,11 @@ export const projectsFields = [
 
 export const messageFields = [
     {
-        label: "name",
+        label: "nom",
         type: "text",
         name: "name",
         id: "name",
-        placeholder: "enter the your name or the name or your company",
+        placeholder: "entrer votre nom",
         icon: ""
     },
     {
@@ -94,7 +94,7 @@ export const messageFields = [
         type: "email",
         name: "email",
         id: "email",
-        placeholder: "enter the your adress email",
+        placeholder: "entrer votre adresse email",
         icon: ""
     },
     {
@@ -102,7 +102,7 @@ export const messageFields = [
         type: "textarea",
         name: "message",
         id: "message",
-        placeholder: "enter the your message",
+        placeholder: "entrer le message que vous souhaiter envoyer",
         icon: ""
     }
 ];
