@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Profile from "../assets/profile.jpg";
+
 
 export default function Home() {
   return (
@@ -8,7 +10,10 @@ export default function Home() {
         <p>je suis un <span>Jonathan Okana</span> </p>
       </div>
       <div className="image-container" >
-        imager here
+        <Image
+          src={Profile}
+          alt="profile"
+        />
       </div>
     </div>
   );

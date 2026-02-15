@@ -1,6 +1,8 @@
+export const runtime = "nodejs";
+
 import { NextResponse } from "next/server";
 import connect from "@/libs/mongodb";
-import projectsModel from "@/models/projects.model";
+import Projects from "../../../../models/projects.model";
 import cloudinary from "@/libs/cloudinary";
 
 export async function POST(req) {
@@ -41,7 +43,7 @@ export async function POST(req) {
         });
 
         //creer la donner dans la base de données
-        const project = await projectsModel.create({
+        const project = await Projects.create({
         name,
         technologies,
         skillUse,
@@ -65,7 +67,7 @@ export async function GET(req) {
     try {
         await connect();
 
-        const projects = await projectsModel.find();
+        const projects = await Projects.find();
 
         return NextResponse.json(projects, {status: 200});
 
