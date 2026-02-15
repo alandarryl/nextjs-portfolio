@@ -4,12 +4,20 @@ import Link from 'next/link';
 function NavBar() {
     return (
         <nav>
-            <h2>.J</h2>
+            <Link href="/" ><h2 className='logo' >.J</h2></Link>
             <ul className='nav-items' >
-                <Link href="./presentation" ><li className='item' >presentation </li> </Link>
-                <Link href="./project" ><li className='item' >projets </li> </Link>
-                <Link href="./skills" ><li className='item' >Competence </li> </Link>
-                <Link href="./contact" ><li className='item' >Contacter </li> </Link>
+                <li className='item' >
+                    <Link href="/presentation" >presentation</Link> 
+                </li>
+                <li className='item' >
+                    <Link href="/project" >projets </Link>
+                </li> 
+                <li className='item' >
+                    <Link href="/skills" >Competence</Link> 
+                </li> 
+                <li className='item' >
+                    <Link href="/contact" >Contacter  </Link>
+                </li>
             </ul>
         </nav>
     )

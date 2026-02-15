@@ -13,7 +13,7 @@ function Messages() {
         try {
             const response = await axios.get(messageApi.api);
 
-            setData(response)
+            setData(response.data)
 
         } catch (error) {
             console.log(error)
