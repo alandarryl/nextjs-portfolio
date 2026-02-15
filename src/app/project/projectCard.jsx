@@ -117,7 +117,7 @@ function projectCard() {
                                                 </div>
                                                 <div className="general-info">
                                                     <ul>
-                                                        <li>Crée - <span>june 2024</span></li>
+                                                        <li>Crée - <span>june 2025</span></li>
                                                         <li>tech - <span>React, CSS, API</span></li>
                                                         <li>Rôle - <span>Frontend Developpeur</span></li>
                                                         <li>Lien - <span><a href="#" target="_blank" > https://react-movie-library-lovat.vercel.app/</a></span></li>

@@ -30,14 +30,19 @@ export default function TimelineTabs() {
             {activeTab === "education" && (
             <div className="timeline">
                 <div className="timeline-item">
-                <span className="date">2022 - 2024</span>
-                <h4>Bachelor of Technology - <span>Accra Institute of Technology</span></h4>
-                <p>Three years of study with strong emphasis on personal and collaborative projects.</p>
+                <span className="date">2025 – 2026</span>
+                <h4>Bachelor En Developement web - <span>DIGITAL CAMPUS PARIS</span></h4>
+                <p>Formation en 2e année Bachelor Développement web.</p>
                 </div>
                 <div className="timeline-item">
-                <span className="date">2024 - 2025</span>
-                <h4>Masters in Computer Science - <span>Example University</span></h4>
-                <p>Specialized in full-stack development and modern web technologies.</p>
+                    <span className="date">2024 - 2025</span>
+                    <h4>Bachelor En Developement web - <span>L’ECE : la grande école de l’ingénierie Numérique</span></h4>
+                    <p>Formation en développement web et application .</p>
+                </div>
+                <div className="timeline-item">
+                    <span className="date"> 2020 – 2022</span>
+                    <h4>Responsive web design <span> - FreeCodeCamp</span></h4>
+                    <p>Formation à distance sur le responsive web design.</p>
                 </div>
             </div>
             )}
@@ -45,14 +50,22 @@ export default function TimelineTabs() {
             {activeTab === "experience" && (
             <div className="timeline">
                 <div className="timeline-item">
-                <span className="date">2023 - 2024</span>
-                <h4>Web Developer - Kosala</h4>
-                <p>Worked as a junior web developer, providing solutions for clients and maintaining web projects.</p>
+                <span className="date">sept 2025 – Nov 2025</span>
+                <h4>Intégrateur web - Stage - BTI-Advisory</h4>
+                <p>
+                    Résolution des bugs sur la plateforme BTI-Advisory (Wordpress)
+                    Création de pages (WordPress),
+                    Intégration du suivi des données analytiques (Motamo, google Analytics).
+                </p>
                 </div>
                 <div className="timeline-item">
-                <span className="date">2024 - Present</span>
-                <h4>Freelance Developer</h4>
-                <p>Providing web and multimedia services to clients worldwide, building modern and responsive applications.</p>
+                <span className="date">Mars 2022 – Aout 2024</span>
+                <h4>Développeur web - Stage - KOSALA PME </h4>
+                <p> 
+                    Développement de la plateforme de l’entreprise from scratch (HTML, CSS,
+                    JavaScript, PHP, Git/Github),
+                    Maintenance et correction de bugs (HTML, CSS, JavaScript)
+                    .</p>
                 </div>
             </div>
             )}
