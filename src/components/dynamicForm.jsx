@@ -31,30 +31,33 @@ function DynamicForm({ fields, endpoint }) {
         setError(null);
 
         try {
+            const form = new FormData();
 
-        const transformedData = { ...formData };
+            Object.keys(formData).forEach((key) => {
 
-        // Transform comma-separated fields into arrays
-        fields.forEach(field => {
-            if (field.multiple && transformedData[field.name]) {
-            transformedData[field.name] =
-                transformedData[field.name]
-                .split(",")
-                .map(item => item.trim());
+            let value = formData[key];
+
+            // Si champ multiple → transformer en string avec virgule
+            const field = fields.find(f => f.name === key);
+            if (field?.multiple && value) {
+                value = value.split(",").map(item => item.trim()).join(",");
             }
-        });
 
-        await axios.post(endpoint, transformedData);
+            form.append(key, value);
+            });
 
-        setFormData({});
-        alert("Created successfully 🚀");
+            await axios.post(endpoint, form);
+
+            setFormData({});
+            alert("Created successfully 🚀");
 
         } catch (err) {
-        setError("Something went wrong");
+            setError("Something went wrong");
         } finally {
-        setLoading(false);
+            setLoading(false);
         }
     };
+
 
     return (
         <form onSubmit={handleSubmit}>
