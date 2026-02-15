@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import ProjectCard from './ProjectCard';
 
 function page() {
   return (
     <div>
-      <h2>Mes prjets</h2>
-      <div className='project-grid' ></div>
+      <h2>Mes projets</h2>
+      <ProjectCard />
     </div>
   )
 }

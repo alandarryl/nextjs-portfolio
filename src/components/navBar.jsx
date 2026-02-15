@@ -16,9 +16,9 @@ function NavBar() {
                 <li className='item' >
                     <Link href="/project" >projets </Link>
                 </li> 
-                <li className='item' >
+                {/* <li className='item' >
                     <Link href="/skills" >Competence</Link> 
-                </li> 
+                </li>  */}
                 <li className='item' >
                     <Link href="/contact" >Contacter  </Link>
                 </li>
