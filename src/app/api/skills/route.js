@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import connect from "@/libs/mongodb";
-import skillsModel from "../../../../models/skills.model";
+import skillsModel from "@/models/skills.model";
 import cloudinary from "@/libs/cloudinary";
 
 export async function POST(req){

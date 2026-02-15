@@ -2,7 +2,7 @@ export const runtime = "nodejs";
 
 import { NextResponse } from "next/server";
 import connect from "@/libs/mongodb";
-import Projects from "../../../../models/projects.model";
+import Projects from "@/models/projects.model";
 import cloudinary from "@/libs/cloudinary";
 
 export async function POST(req) {

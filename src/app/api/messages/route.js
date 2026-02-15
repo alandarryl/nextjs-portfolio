@@ -1,7 +1,7 @@
 
 import connect from "@/libs/mongodb";
 import { NextResponse } from "next/server";
-import messagesModel from "../../../../models/messages.model";
+import messagesModel from "@/models/messages.model";
 
 export async function POST(req) {
     try {

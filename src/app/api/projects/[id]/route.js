@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import connect from "@/libs/mongodb";
-import projectsModel from "../../../../../models/projects.model";
+import projectsModel from "@/models/projects.model";
 import cloudinary from "@/libs/cloudinary";
 import { skillsApi } from "@/utils/apiUrl";
 
