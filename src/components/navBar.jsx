@@ -7,7 +7,7 @@ function NavBar() {
     return (
         <nav>
             <h2 className='logo' >
-                <Link href="/" >.J</Link>
+                <Link href="/" >.Jo</Link>
             </h2>
             <ul className='nav-items' >
                 <li className='item' >
