@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -9,7 +11,7 @@ function Messages() {
 
     const getMessage = async () =>{
         try {
-            const response = await axios.get(messageApi);
+            const response = await axios.get(messageApi.api);
 
             setData(response)
 

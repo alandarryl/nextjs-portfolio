@@ -8,12 +8,14 @@ export async function POST(req) {
         await connect();
 
         //get data sent
-        const message = await req.formData();
+        const formData = await req.formData();
 
-        if(!message) return NextResponse.json({message: "Error of entry"}, {status: 404});
+        const data = Object.fromEntries(formData.entries());
+
+        if(!data) return NextResponse.json({message: "Error of entry"}, {status: 404});
 
         //create the message in our model
-        const messageCreated = await messagesModel.create(message);
+        const messageCreated = await messagesModel.create(data);
 
         return NextResponse.json({result: messageCreated},{status:201} );
 

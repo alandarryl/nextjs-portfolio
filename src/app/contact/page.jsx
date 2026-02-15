@@ -8,7 +8,7 @@ function page() {
     return (
         <div className='contact-form' >
             <h2>Formulaire de contact</h2>
-            <DynamicForm fields={messageFields} endpoint={messageApi} />
+            <DynamicForm fields={messageFields} endpoint={messageApi.api} />
         </div>
     )
 }
