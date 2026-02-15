@@ -75,7 +75,7 @@ export async function DELETE(re, {params}) {
     try {
         await connect();
 
-        await skillsApi.findByIdAndDelete(params.id);
+        await skills.findByIdAndDelete(params.id);
 
         return NextResponse.json({message: "Deleted successfully"}, {status:200});
 
