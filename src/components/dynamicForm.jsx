@@ -56,7 +56,7 @@ function DynamicForm({ fields, endpoint }) {
         } finally {
             setLoading(false);
         }
-    };
+        };
 
 
     return (
